@@ -10,7 +10,7 @@
   "dependencies": {
     "browserify": "^10.2.4",
     "react": "^0.13.3",
-    "webtorrent-hybrid": "^0.38.4"
+    "webtorrent-hybrid": "kevinsimper/webtorrent-hybrid.git#update-wrtc"
   },
   "devDependencies": {
     "reactify": "^1.1.1",

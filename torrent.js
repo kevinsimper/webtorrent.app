@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-</head>
-<body>
-<div id="app"></div>
-<script>
 var WebTorrent = require('webtorrent-hybrid')
 
 var client = new WebTorrent()
-client.on('torrent', function (torrent) {console.log(arguments)})
 var magnet = 'magnet:?xt=urn:btih:bb48b51d5a902f99c8506f6707f952bdaa2153ad&dn=10_246_16_21.sql&tr=wss%3A%2F%2Ftracker.webtorrent.io'
 
-console.log(client)
+
 client.add(magnet, function (torrent) {
   console.log('Torrent info hash:', torrent.infoHash)
 
@@ -30,6 +21,3 @@ client.add(magnet, function (torrent) {
     })
   })
 })
-</script>
-</body>
-</html>
